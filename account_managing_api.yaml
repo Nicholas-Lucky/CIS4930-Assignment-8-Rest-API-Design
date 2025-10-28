@@ -29,7 +29,7 @@ paths:
       description: In the case of Assignment 8 Rest API Design, this can be used when to verify a user when they are attempting to log into their account.
       responses:
         "200": # Success; a JSON array of user accounts are returned
-          description: "Success: User accounts successfully returned"
+          description: "Success: User accounts successfully found and returned"
           content:
             application/json:
               schema:
@@ -48,7 +48,7 @@ paths:
           schema:
             type: object
             required:
-              - userName
+              - username
               - email
             properties:
               username:
